@@ -2,6 +2,7 @@ import { Request, Response } from "express";
 import User from "../database/schemas/user";
 
 class UserController {
+  
   async findUser(req: Request, res: Response) {
     try {
         const users = await User.find()
